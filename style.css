@@ -1,0 +1,101 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:#016CE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width:50%;
+    border-radius: 8px;
+    padding:24px;
+}
+
+.container .header{
+    display: block;
+    font-size: 22px;
+    width:100%;
+    text-align: center;
+}
+
+.container .converter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:34px 24px;
+}
+
+.converter div{
+    display: flex;
+    flex-direction: column ;
+}
+.converter label{
+    font-size: 20px;
+    padding-bottom:5px;
+}
+
+.converter input{
+    height:40px;
+    width: 270px;
+    outline: #0170EB;
+    border-radius:5px;
+    border:1px solid lightgray;
+    padding:0px 8px;
+}
+
+.converter input:focus{
+    border:1px solid #0170EB;
+}
+
+.converter select{
+    height:44px;
+    width: 270px;
+    outline: #0170EB;
+    border-radius:5px;
+    border:1px solid lightgray;
+    padding:0px 8px;
+}
+
+.converter select:focus{
+    border:1px solid #0170EB;
+}
+
+.container .buttons{
+    padding:0px 24px;
+}
+
+.buttons button{
+    background-color: #0170EB;
+    border-radius: 8px;
+    padding:12px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:white;
+    border:none;
+    display: block;
+    float:right;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: #1383F5;
+}
+
+.converted{
+    display:flex;
+    flex-direction: column;
+    padding:0px 24px;
+}
+
+.converted #output{
+    font-size: 32px;
+}
+
+.converted #rate{
+    color:gray;
+}
