@@ -6,6 +6,15 @@ let to = document.querySelector("#to");
 let output = document.querySelector("#output");
 let rate = document.querySelector("#rate");
 let convert = document.querySelector("button");
+let dropdowns = document.querySelectorAll(".dropdown");
+
+for(let select of dropdowns){
+    for(let currency in countryList){
+        let option = document.createElement("option");
+        option.innerText = currency;
+        select.append(option);
+    }
+}
 
 let fetchCurrencyApi = async()=>{
     let baseUrl = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${fromCurrency.toLowerCase()}/${toCurrency.toLowerCase()}.json`;
